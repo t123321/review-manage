@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.object.mapper.AdminMapper">
+  <resultMap id="BaseResultMap" type="admin">
+    <id column="admin_id" jdbcType="INTEGER" property="adminId" />
+    <result column="admin_name" jdbcType="VARCHAR" property="adminName" />
+    <result column="admin_sex" jdbcType="CHAR" property="adminSex" />
+    <result column="admin_age" jdbcType="INTEGER" property="adminAge" />
+    <result column="admin_login_name" jdbcType="VARCHAR" property="adminLoginName" />
+    <result column="admin_login_password" jdbcType="VARCHAR" property="adminLoginPassword" />
+    <result column="admin_phone" jdbcType="VARCHAR" property="adminPhone" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_data" jdbcType="TIMESTAMP" property="createData" />
+    <result column="update_by" jdbcType="VARCHAR" property="updateBy" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="del_flag" jdbcType="CHAR" property="delFlag" />
+    <result column="reserve1" jdbcType="VARCHAR" property="reserve1" />
+    <result column="reserve2" jdbcType="VARCHAR" property="reserve2" />
+    <result column="reserve3" jdbcType="VARCHAR" property="reserve3" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    admin_id, admin_name, admin_sex, admin_age, admin_login_name, admin_login_password, 
+    admin_phone, create_by, create_data, update_by, update_date, remarks, del_flag, reserve1, 
+    reserve2, reserve3
+  </sql>
+  <select id="queryAll" resultMap="BaseResultMap">
+    select *
+    from admin
+  </select>
+  <select id="queryByKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from admin
+    where admin_id = #{adminId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByKey" parameterType="java.lang.Integer">
+    delete from admin
+    where admin_id = #{adminId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="admin">
+    insert into admin (admin_id, admin_name, admin_sex, 
+      admin_age, admin_login_name, admin_login_password, 
+      admin_phone, create_by, create_data, 
+      update_by, update_date, remarks, 
+      del_flag, reserve1, reserve2, 
+      reserve3)
+    values (#{adminId,jdbcType=INTEGER}, #{adminName,jdbcType=VARCHAR}, #{adminSex,jdbcType=CHAR}, 
+      #{adminAge,jdbcType=INTEGER}, #{adminLoginName,jdbcType=VARCHAR}, #{adminLoginPassword,jdbcType=VARCHAR}, 
+      #{adminPhone,jdbcType=VARCHAR}, #{createBy,jdbcType=VARCHAR}, #{createData,jdbcType=TIMESTAMP}, 
+      #{updateBy,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}, #{remarks,jdbcType=VARCHAR}, 
+      #{delFlag,jdbcType=CHAR}, #{reserve1,jdbcType=VARCHAR}, #{reserve2,jdbcType=VARCHAR}, 
+      #{reserve3,jdbcType=VARCHAR})
+  </insert>
+  
+  <update id="update" parameterType="admin">
+    update admin
+    set admin_name = #{adminName,jdbcType=VARCHAR},
+      admin_sex = #{adminSex,jdbcType=CHAR},
+      admin_age = #{adminAge,jdbcType=INTEGER},
+      admin_login_name = #{adminLoginName,jdbcType=VARCHAR},
+      admin_login_password = #{adminLoginPassword,jdbcType=VARCHAR},
+      admin_phone = #{adminPhone,jdbcType=VARCHAR},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      create_data = #{createData,jdbcType=TIMESTAMP},
+      update_by = #{updateBy,jdbcType=VARCHAR},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      remarks = #{remarks,jdbcType=VARCHAR},
+      del_flag = #{delFlag,jdbcType=CHAR},
+      reserve1 = #{reserve1,jdbcType=VARCHAR},
+      reserve2 = #{reserve2,jdbcType=VARCHAR},
+      reserve3 = #{reserve3,jdbcType=VARCHAR}
+    where admin_id = #{adminId,jdbcType=INTEGER}
+  </update>
+  
+  <!--  <insert id="insertSelective" parameterType="com.object.pojo.Admin">
+    insert into admin
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="adminId != null">
+        admin_id,
+      </if>
+      <if test="adminName != null">
+        admin_name,
+      </if>
+      <if test="adminSex != null">
+        admin_sex,
+      </if>
+      <if test="adminAge != null">
+        admin_age,
+      </if>
+      <if test="adminLoginName != null">
+        admin_login_name,
+      </if>
+      <if test="adminLoginPassword != null">
+        admin_login_password,
+      </if>
+      <if test="adminPhone != null">
+        admin_phone,
+      </if>
+      <if test="createBy != null">
+        create_by,
+      </if>
+      <if test="createData != null">
+        create_data,
+      </if>
+      <if test="updateBy != null">
+        update_by,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="remarks != null">
+        remarks,
+      </if>
+      <if test="delFlag != null">
+        del_flag,
+      </if>
+      <if test="reserve1 != null">
+        reserve1,
+      </if>
+      <if test="reserve2 != null">
+        reserve2,
+      </if>
+      <if test="reserve3 != null">
+        reserve3,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="adminId != null">
+        #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="adminName != null">
+        #{adminName,jdbcType=VARCHAR},
+      </if>
+      <if test="adminSex != null">
+        #{adminSex,jdbcType=CHAR},
+      </if>
+      <if test="adminAge != null">
+        #{adminAge,jdbcType=INTEGER},
+      </if>
+      <if test="adminLoginName != null">
+        #{adminLoginName,jdbcType=VARCHAR},
+      </if>
+      <if test="adminLoginPassword != null">
+        #{adminLoginPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="adminPhone != null">
+        #{adminPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createData != null">
+        #{createData,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remarks != null">
+        #{remarks,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null">
+        #{delFlag,jdbcType=CHAR},
+      </if>
+      <if test="reserve1 != null">
+        #{reserve1,jdbcType=VARCHAR},
+      </if>
+      <if test="reserve2 != null">
+        #{reserve2,jdbcType=VARCHAR},
+      </if>
+      <if test="reserve3 != null">
+        #{reserve3,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert> -->
+  
+</mapper>

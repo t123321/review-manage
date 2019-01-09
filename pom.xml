@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>review-manage</artifactId>
+  <packaging>pom</packaging>
+  <parent>
+		<groupId>com.tang.review</groupId>
+		<artifactId>review-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <dependencies>
+		<dependency>
+			<groupId>com.tang.review</groupId>
+			<artifactId>review-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  </dependencies>
+  <modules>
+  	<module>review-manage-mapper</module>
+  	<module>review-manage-pojo</module>
+  	<module>review-manage-service</module>
+  	<module>review-manage-web</module>
+  	<module>review-manage-mapping</module>
+  </modules>
+  <build>
+		<plugins>
+			<!-- 配置Tomcat插件 -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<configuration>
+					<port>8080</port>
+					<path>/</path>
+				</configuration>
+			</plugin>
+		</plugins>
+  </build>
+</project>

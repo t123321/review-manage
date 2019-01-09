@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.tang.review</groupId>
+    <artifactId>review-manage</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>review-manage-web</artifactId>
+  <dependencies>
+  		<!-- 依赖业务层 -->
+		<dependency>
+			<groupId>com.tang.review</groupId>
+			<artifactId>review-manage-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  </dependencies>
+  <packaging>war</packaging>
+</project>

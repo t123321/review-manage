@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration  
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">  
+      
+<configuration>  
+    <!-- 全局别名设置，在映射文件中只需写别名，而不必写出整个类路径  -->  
+   <typeAliases>     
+        <!--  <typeAlias type="com.object.mapper.AdminMapper" alias="admin"/>   -->
+         <!-- 自动扫描改路径下的类 自动设置别名 一般是类名小写(首字母大写也可以) -->
+          <package name="com.object.pojo" />   
+    </typeAliases>  
+    <!-- 告诉mybatis需要引入哪些Mapping映射文件 -->
+     <!-- <mappers>
+       <package name="com/object/mapper"/>
+       不用mapper resource的原因:要放在同级目录下... 
+    </mappers>-->
+    <!-- 
+    mybatis默认支持别名
+    	别名		映射的类型
+
+		_byte	byte
+		
+		_long 	long
+		
+		_short 	short
+		
+		_int 	int
+		
+		_integer int
+		
+		_double  double
+		
+		_float 	float
+		
+		_boolean boolean
+		
+		string 	String
+		
+		byte 	Byte
+		
+		long 	Long
+		
+		short 	Short
+		
+		int 	Integer
+		
+		integer Integer
+		
+		double 	Double
+		
+		float 	Float
+		
+		boolean Boolean
+		
+		date 	Date
+		
+		decimal BigDecimal
+		
+		bigdecimal BigDecimal
+     -->
+</configuration>
