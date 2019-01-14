@@ -12,7 +12,12 @@ import com.object.service.AdminServiceImpl;
 
 @Controller
 @RequestMapping("/AdminController")
-public class AdminController {
+/**
+ * 登录页面控制器(Controller)
+ * @author Administrator
+ *
+ */
+public class LoginController {
 	 	private AdminServiceImpl adminService;
 	    
 	    public AdminServiceImpl getAdminService() {

@@ -5,6 +5,11 @@ import java.util.List;
 
 import com.object.pojo.Admin;
 
+/**
+ * 操作管理员表的数据层
+ * @author Administrator
+ *
+ */
 public interface AdminMapper extends BaseMapper<Admin> {
 
 	@Override

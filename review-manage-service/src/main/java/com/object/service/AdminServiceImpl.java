@@ -11,6 +11,11 @@ import com.object.pojo.Admin;
 
 @Transactional
 @Service("adminService")
+/**
+ * 操作管理员表的业务层
+ * @author Administrator
+ *
+ */
 public class AdminServiceImpl {
     
     private AdminMapper adminMapper;
