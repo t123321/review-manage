@@ -11,10 +11,23 @@ import com.object.pojo.Admin;
 
 @Transactional
 @Service("adminService")
-public class AdminServiceImpl extends BaseServiceImpl<AdminMapper> {
+/**
+ * 操作管理员表的业务层
+ * @author Administrator
+ *
+ */
+public class AdminServiceImpl {
     
-	@Autowired
     private AdminMapper adminMapper;
+
+    public AdminMapper getAdminMapper() {
+        return adminMapper;
+    }
+    
+    @Autowired
+    public void setAdminMapper(AdminMapper adminMapper) {
+        this.adminMapper = adminMapper;
+    }
 
     public List<Admin> loadAdmin() {
         return adminMapper.queryAll();
