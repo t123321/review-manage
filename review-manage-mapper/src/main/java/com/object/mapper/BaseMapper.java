@@ -3,6 +3,12 @@ package com.object.mapper;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * 公共的Mapper接口父类
+ * @author Administrator
+ *
+ * @param <T>
+ */
 public interface BaseMapper<T> {
 
 	/**
