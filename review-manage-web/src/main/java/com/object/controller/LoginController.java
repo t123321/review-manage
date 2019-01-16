@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.object.mapper.AdminMapper;
 import com.object.pojo.Admin;
 import com.object.service.AdminServiceImpl;
 
@@ -27,9 +28,9 @@ public class LoginController {
 	    }
 
 	    @ResponseBody
-	    @RequestMapping("/showAdmin")
-	    public List<Admin> showAdmin(){
-	        List<Admin> admin = adminService.loadAdmin();
+	    @RequestMapping("/findAdminByName")
+	    public Admin findAdminByName(String adminLoginName){
+	        Admin admin = adminService.queryAdminByLoginName(adminLoginName);
 	        return admin;
 	    }
 }

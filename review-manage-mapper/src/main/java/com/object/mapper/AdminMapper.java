@@ -3,6 +3,8 @@ package com.object.mapper;
 import java.io.Serializable;
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.object.pojo.Admin;
 
 /**
@@ -26,6 +28,12 @@ public interface AdminMapper extends BaseMapper<Admin> {
 
 	@Override
 	void deleteByKey(Serializable id);
+
+	/**
+	 * 根据登陆名查询管理员
+	 * @param adminLoginName 登陆名
+	 */
+	Admin queryAdminByLoginName(@Param(value="adminLoginName")String adminLoginName);
 
     
 }

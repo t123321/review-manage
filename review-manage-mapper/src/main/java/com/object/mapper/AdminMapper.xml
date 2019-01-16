@@ -24,6 +24,13 @@
     admin_phone, create_by, create_data, update_by, update_date, remarks, del_flag, reserve1, 
     reserve2, reserve3
   </sql>
+  
+  <select id="queryAdminByLoginName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select *
+    from admin
+    where admin_login_name=#{adminLoginName,}
+  </select>
+  
   <select id="queryAll" resultMap="BaseResultMap">
     select *
     from admin

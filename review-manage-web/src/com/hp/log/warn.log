@@ -1,0 +1,10 @@
+2019-01-16 14:07:16 下午 [Thread: http-bio-8080-exec-6][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+WARN:No mapping found for HTTP request with URI [/LoginController/showAdmin] in DispatcherServlet with name 'springDispatcherServlet'
+2019-01-16 14:07:16 下午 [Thread: http-bio-8080-exec-8][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+WARN:No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'springDispatcherServlet'
+2019-01-16 16:36:39 下午 [Thread: http-bio-8080-exec-4][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+WARN:No mapping found for HTTP request with URI [/LoginController/findAdminByName] in DispatcherServlet with name 'springDispatcherServlet'
+2019-01-16 17:16:16 下午 [Thread: http-bio-8080-exec-3][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+WARN:No mapping found for HTTP request with URI [/LoginController/queryByKey] in DispatcherServlet with name 'springDispatcherServlet'
+2019-01-16 17:19:26 下午 [Thread: http-bio-8080-exec-1][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+WARN:No mapping found for HTTP request with URI [/LoginController/queryByKey] in DispatcherServlet with name 'springDispatcherServlet'

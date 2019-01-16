@@ -1,5 +1,6 @@
 package com.object.service;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,21 +17,41 @@ import com.object.pojo.Admin;
  * @author Administrator
  *
  */
-public class AdminServiceImpl {
-    
+public class AdminServiceImpl extends BaseServiceImpl<Admin> {
+	@Autowired
     private AdminMapper adminMapper;
 
-    public AdminMapper getAdminMapper() {
-        return adminMapper;
-    }
-    
-    @Autowired
-    public void setAdminMapper(AdminMapper adminMapper) {
-        this.adminMapper = adminMapper;
-    }
+	@Override
+	public Admin queryByKey(Serializable id) {
+		return super.queryByKey(id);
+	}
 
-    public List<Admin> loadAdmin() {
-        return adminMapper.queryAll();
-    }
-    
+	@Override
+	public List<Admin> queryAll() {
+		return super.queryAll();
+	}
+
+	@Override
+	public void insert(Admin t) {
+		super.insert(t);
+	}
+
+	@Override
+	public void update(Admin t) {
+		super.update(t);
+	}
+
+	@Override
+	public void deleteByKey(Serializable id) {
+		super.deleteByKey(id);
+	}
+	
+	/**
+	 * 根据登陆名查询管理员
+	 * @param adminLoginName 登陆名
+	 */
+	public Admin queryAdminByLoginName(String adminLoginName) {
+		return adminMapper.queryAdminByLoginName(adminLoginName);
+	}
+
 }
