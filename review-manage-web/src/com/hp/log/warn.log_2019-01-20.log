@@ -1,3 +1,5 @@
+2019-01-20 08:45:42 上午 [Thread: http-bio-8080-exec-6][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+WARN:No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'springDispatcherServlet'
 2019-01-20 08:45:50 上午 [Thread: http-bio-8080-exec-6][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:688) ]
 ERROR:init datasource error, url: jdbc:mysql://127.0.0.1:3306/review
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure

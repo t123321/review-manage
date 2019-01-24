@@ -4,15 +4,7 @@
     <meta charset="UTF-8">
     <title>后台登录-班级</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/angular.js"></script>
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/xadmin.css">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
-    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
-    <script src="./lib/layui/layui.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./js/xadmin.js"></script>
-	
+    <script src="./js/common-css-js.js"></script>
 </head>
 <body ng-app="" >
     <!-- 顶部开始 -->
@@ -191,13 +183,14 @@
             </table>
             <!-- 右侧内容框架，更改从这里结束 -->
           </div>
+        <div id="layui-page" style="margin:0px 25%;width: 324px;"></div>
         </div>
         <!-- 右侧主体结束 -->
     </div>
     <!-- 中部结束 -->
     <!-- 底部开始 -->
     <div class="footer">
-        <div class="copyright">Copyright ©2017 x-admin v2.3 All Rights Reserved. 本后台系统由X前端框架提供前端技术支持</div>  
+        <ng-include src="'/common/footer.html'" onload="" autoscroll="true" ></ng-include>  
     </div>
     <!-- 底部结束 -->
     <!-- 背景切换开始 -->
@@ -224,6 +217,17 @@
     <!-- 背景切换结束 -->
     <!-- 页面动态效果 -->
     <script>
+		layui.use('laypage', function(){
+		  var laypage = layui.laypage;
+		  
+		  //执行一个laypage实例
+		  laypage.render({
+		    elem: 'layui-page' //注意，这里的 test1 是 ID，不用加 # 号
+		    ,count: 50 //数据总数，从服务端得到
+		  });
+		});
+	</script>
+    <script>
 
         layui.use(['laydate'], function(){
           laydate = layui.laydate;//日期插件
@@ -234,7 +238,7 @@
 
           
           var start = {
-            min: laydate.now()
+            min: laydate.now
             ,max: '2099-06-16 23:59:59'
             ,istoday: false
             ,choose: function(datas){
@@ -244,7 +248,7 @@
           };
           
           var end = {
-            min: laydate.now()
+            min: laydate.now
             ,max: '2099-06-16 23:59:59'
             ,istoday: false
             ,choose: function(datas){

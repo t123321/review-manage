@@ -1,13 +1,45 @@
+ <script type="text/javascript">
+            /* $("li.layui-nav-item:eq(0)").click(function () {
+  				$("span.layui-nav-more").addClass("layui-nav-mored");
+  				$("dl.layui-nav-child" ).addClass("layui-show");
+  			 }
+  			);
+             $("li.layui-nav-item:eq(0)").click(function () {
+          				$("span.layui-nav-more").addClass("layui-nav-mored");
+          				$("dl.layui-nav-child" ).addClass("layui-show");
+          			 }
+          		);
+             $("li.layui-nav-item:eq(0)").hover(
+       			 function () {
+       				$("span.layui-nav-more").addClass("layui-nav-mored");
+       				$("dl.layui-nav-child" ).addClass("layui-show");
+       			 },
+       			 function () {
+       				$("span.layui-nav-more").removeClass("layui-nav-mored");
+       				$("dl.layui-nav-child" ).removeClass("layui-show");
+       			}
+       		); */
+        </script>
+        <style>
+.header-li:onmouseover{
+}
+</style>
 <div class="logo"><a href="./index.html">Class - The - BackgroundLogin</a></div>
         <div class="open-nav"><i class="iconfont">&#xe699;</i></div>
         <ul class="layui-nav right" lay-filter="">
-          <li class="layui-nav-item">
-            <a href="javascript:;">admin</a>
-            <dl class="layui-nav-child"> <!-- 二级菜单 -->
+          <li class="layui-nav-item header-li">
+            <a href="javascript:;">
+            	admin
+           		<span class="layui-nav-more "></span>
+            </a>
+           <!--  layui-nav-mored  -->
+            <dl class="layui-nav-child layui-anim layui-anim-upbit "> <!-- 二级菜单 -->
               <dd><a href="#">个人信息</a></dd>
               <dd><a href="#">切换帐号</a></dd>
               <dd><a href="./login.html">退出</a></dd>
             </dl>
           </li>
           <li class="layui-nav-item"><a href="/">前台首页</a></li>
+          <span class="layui-nav-bar" style="left: 242.141px; top: 66px; width: 0px; opacity: 0;"></span>
         </ul>
+           
