@@ -2,6 +2,8 @@ package com.object.pojo;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class Admin {
     private Integer adminId;
 
@@ -18,11 +20,11 @@ public class Admin {
     private String adminPhone;
 
     private String createBy;
-
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date createData;
 
     private String updateBy;
-
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date updateDate;
 
     private String remarks;
