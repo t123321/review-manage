@@ -1,4 +1,4 @@
-2019-01-24 08:19:30 上午 [Thread: http-bio-8080-exec-8][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+2019-02-01 20:19:10 下午 [Thread: http-bio-8080-exec-8][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
 WARN:No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'springDispatcherServlet'
-2019-01-24 08:29:44 上午 [Thread: http-bio-8080-exec-10][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
-WARN:No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'springDispatcherServlet'
+2019-02-01 21:06:03 下午 [Thread: http-bio-8080-exec-8][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+WARN:No mapping found for HTTP request with URI [/lib/layui/css/modules/layer/default/loading-1.gif] in DispatcherServlet with name 'springDispatcherServlet'

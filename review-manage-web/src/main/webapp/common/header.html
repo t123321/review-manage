@@ -20,14 +20,11 @@
        			}
        		); */
         </script>
-        <style>
-.header-li:onmouseover{
-}
-</style>
 <div class="logo"><a href="./index.html">Class - The - BackgroundLogin</a></div>
         <div class="open-nav"><i class="iconfont">&#xe699;</i></div>
         <ul class="layui-nav right" lay-filter="">
-          <li class="layui-nav-item header-li">
+          <li class="layui-nav-item header-li" onmouseover='$("span.layui-nav-more").addClass("layui-nav-mored");$("dl.layui-nav-child" ).addClass("layui-show");'
+          									   onmouseout='$("span.layui-nav-more").removeClass("layui-nav-mored");$("dl.layui-nav-child" ).removeClass("layui-show");'>
             <a href="javascript:;">
             	admin
            		<span class="layui-nav-more "></span>

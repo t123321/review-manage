@@ -1,320 +1,152 @@
-2019-01-24 08:19:12 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
+2019-02-01 20:08:44 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
 INFO:Root WebApplicationContext: initialization started
-2019-01-24 08:19:12 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 08:19:12 CST 2019]; root of context hierarchy
-2019-01-24 08:19:12 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 20:08:44 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing Root WebApplicationContext: startup date [Fri Feb 01 20:08:44 CST 2019]; root of context hierarchy
+2019-02-01 20:08:44 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 08:19:13 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 20:08:45 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 08:19:13 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 20:08:45 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:19:14 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2470 ms
-2019-01-24 08:19:14 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
+2019-02-01 20:08:48 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
+INFO:Root WebApplicationContext: initialization completed in 4208 ms
+2019-02-01 20:08:48 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
 INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 08:19:14 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 08:19:14 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 08:19:14 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 20:08:48 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Feb 01 20:08:48 CST 2019]; parent: Root WebApplicationContext
+2019-02-01 20:08:48 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 08:19:15 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 20:08:48 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:19:15 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 20:08:49 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 08:19:15 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 20:08:49 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 08:19:16 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 2015 ms
-2019-01-24 08:19:30 上午 [Thread: http-bio-8080-exec-8][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+2019-02-01 20:08:50 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
+INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 2295 ms
+2019-02-01 20:19:10 下午 [Thread: http-bio-8080-exec-8][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
 WARN:No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'springDispatcherServlet'
-2019-01-24 08:20:04 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
-INFO:Root WebApplicationContext: initialization started
-2019-01-24 08:20:04 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 08:20:04 CST 2019]; root of context hierarchy
-2019-01-24 08:20:05 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 08:20:05 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 08:20:05 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:20:06 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 1909 ms
-2019-01-24 08:20:06 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 08:20:06 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 08:20:06 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 08:20:06 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 08:20:06 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:20:07 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 08:20:07 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 08:20:08 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 2109 ms
-2019-01-24 08:20:41 上午 [Thread: http-bio-8080-exec-3][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) ]
+2019-02-01 20:19:17 下午 [Thread: http-bio-8080-exec-8][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) ]
 INFO:{dataSource-1} inited
-2019-01-24 08:28:03 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
+2019-02-01 20:54:57 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
 INFO:Root WebApplicationContext: initialization started
-2019-01-24 08:28:03 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 08:28:03 CST 2019]; root of context hierarchy
-2019-01-24 08:28:03 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 20:54:57 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing Root WebApplicationContext: startup date [Fri Feb 01 20:54:57 CST 2019]; root of context hierarchy
+2019-02-01 20:54:57 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 08:28:04 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 20:54:58 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 08:28:04 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 20:54:58 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:28:05 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2462 ms
-2019-01-24 08:28:05 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
+2019-02-01 20:54:59 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
+INFO:Root WebApplicationContext: initialization completed in 2098 ms
+2019-02-01 20:54:59 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
 INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 08:28:05 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 08:28:05 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 08:28:05 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 20:54:59 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Feb 01 20:54:59 CST 2019]; parent: Root WebApplicationContext
+2019-02-01 20:54:59 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 08:28:06 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 20:55:00 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:28:06 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 08:28:06 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 20:55:00 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 08:28:07 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 1372 ms
-2019-01-24 08:28:56 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
-INFO:Root WebApplicationContext: initialization started
-2019-01-24 08:28:56 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 08:28:56 CST 2019]; root of context hierarchy
-2019-01-24 08:28:56 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 08:28:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 08:28:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:28:58 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2518 ms
-2019-01-24 08:28:58 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 08:28:58 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 08:28:58 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 08:28:58 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 08:28:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:28:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 08:28:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 20:55:00 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 08:29:00 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 1379 ms
-2019-01-24 08:29:44 上午 [Thread: http-bio-8080-exec-10][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
-WARN:No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'springDispatcherServlet'
-2019-01-24 08:30:47 上午 [Thread: http-bio-8080-exec-2][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) ]
+2019-02-01 20:55:00 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+INFO:Mapped "{[/LoginController/findUserAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.object.pojo.Admin> com.object.controller.LoginController.findAdminAll()
+2019-02-01 20:55:01 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
+INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 1879 ms
+2019-02-01 20:56:39 下午 [Thread: http-bio-8080-exec-3][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) ]
 INFO:{dataSource-1} inited
-2019-01-24 08:32:56 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
+2019-02-01 21:06:03 下午 [Thread: http-bio-8080-exec-8][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1118) ]
+WARN:No mapping found for HTTP request with URI [/lib/layui/css/modules/layer/default/loading-1.gif] in DispatcherServlet with name 'springDispatcherServlet'
+2019-02-01 21:12:45 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
 INFO:Root WebApplicationContext: initialization started
-2019-01-24 08:32:56 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 08:32:56 CST 2019]; root of context hierarchy
-2019-01-24 08:32:56 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 21:12:45 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing Root WebApplicationContext: startup date [Fri Feb 01 21:12:45 CST 2019]; root of context hierarchy
+2019-02-01 21:12:45 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 08:32:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 21:12:45 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 08:32:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 21:12:46 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:32:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2512 ms
-2019-01-24 08:32:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
+2019-02-01 21:12:47 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
+INFO:Root WebApplicationContext: initialization completed in 2703 ms
+2019-02-01 21:12:47 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
 INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 08:32:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 08:32:59 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 08:32:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 21:12:47 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Feb 01 21:12:47 CST 2019]; parent: Root WebApplicationContext
+2019-02-01 21:12:47 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 08:32:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 21:12:48 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 08:32:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 21:12:48 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 08:32:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 21:12:48 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 08:33:01 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 2095 ms
-2019-01-24 09:08:52 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
+2019-02-01 21:12:48 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+INFO:Mapped "{[/LoginController/findUserAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.object.pojo.Admin> com.object.controller.LoginController.findAdminAll()
+2019-02-01 21:12:49 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
+INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 1526 ms
+2019-02-01 21:13:10 下午 [Thread: http-bio-8080-exec-3][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) ]
+INFO:{dataSource-1} inited
+2019-02-01 21:14:17 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
 INFO:Root WebApplicationContext: initialization started
-2019-01-24 09:08:53 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 09:08:53 CST 2019]; root of context hierarchy
-2019-01-24 09:08:53 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 21:14:17 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing Root WebApplicationContext: startup date [Fri Feb 01 21:14:17 CST 2019]; root of context hierarchy
+2019-02-01 21:14:18 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 09:08:53 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 21:14:18 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 09:08:54 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 21:14:18 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 09:08:55 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2816 ms
-2019-01-24 09:08:55 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
+2019-02-01 21:14:19 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
+INFO:Root WebApplicationContext: initialization completed in 2066 ms
+2019-02-01 21:14:19 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
 INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 09:08:55 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 09:08:55 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 09:08:55 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 21:14:19 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Feb 01 21:14:19 CST 2019]; parent: Root WebApplicationContext
+2019-02-01 21:14:19 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 09:08:56 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 21:14:20 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 09:08:56 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 21:14:20 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 09:08:56 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 21:14:20 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 09:08:58 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 2586 ms
-2019-01-24 09:11:28 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
+2019-02-01 21:14:20 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+INFO:Mapped "{[/LoginController/findUserAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.object.pojo.Admin> com.object.controller.LoginController.findAdminAll()
+2019-02-01 21:14:21 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
+INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 2097 ms
+2019-02-01 21:14:50 下午 [Thread: http-bio-8080-exec-3][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) ]
+INFO:{dataSource-1} inited
+2019-02-01 21:48:26 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
 INFO:Root WebApplicationContext: initialization started
-2019-01-24 09:11:28 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 09:11:28 CST 2019]; root of context hierarchy
-2019-01-24 09:11:28 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 21:48:26 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing Root WebApplicationContext: startup date [Fri Feb 01 21:48:26 CST 2019]; root of context hierarchy
+2019-02-01 21:48:26 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 09:11:29 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 21:48:27 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 09:11:29 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 21:48:27 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 09:11:30 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2121 ms
-2019-01-24 09:11:30 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
+2019-02-01 21:48:28 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
+INFO:Root WebApplicationContext: initialization completed in 1665 ms
+2019-02-01 21:48:28 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
 INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 09:11:30 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 09:11:30 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 09:11:30 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
+2019-02-01 21:48:28 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
+INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Feb 01 21:48:28 CST 2019]; parent: Root WebApplicationContext
+2019-02-01 21:48:28 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
 INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 09:11:31 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
+2019-02-01 21:48:28 下午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
 INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 09:11:31 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 21:48:28 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 09:11:31 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+2019-02-01 21:48:28 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
 INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 09:11:33 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 2861 ms
-2019-01-24 09:14:54 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
-INFO:Root WebApplicationContext: initialization started
-2019-01-24 09:14:54 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 09:14:54 CST 2019]; root of context hierarchy
-2019-01-24 09:14:54 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 09:14:55 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 09:14:55 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 09:14:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2973 ms
-2019-01-24 09:14:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 09:14:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 09:14:57 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 09:14:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 09:14:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 09:14:58 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 09:14:58 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 09:14:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 2018 ms
-2019-01-24 09:50:40 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
-INFO:Root WebApplicationContext: initialization started
-2019-01-24 09:50:40 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 09:50:40 CST 2019]; root of context hierarchy
-2019-01-24 09:50:40 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 09:50:41 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 09:50:41 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 09:50:42 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2133 ms
-2019-01-24 09:50:42 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 09:50:42 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 09:50:42 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 09:50:42 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 09:50:42 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 09:50:43 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 09:50:43 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 09:50:44 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 2239 ms
-2019-01-24 10:59:53 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
-INFO:Root WebApplicationContext: initialization started
-2019-01-24 10:59:53 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 10:59:53 CST 2019]; root of context hierarchy
-2019-01-24 10:59:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 10:59:57 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 10:59:58 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 10:59:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 5875 ms
-2019-01-24 10:59:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 10:59:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 10:59:59 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 10:59:59 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 11:00:00 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 11:00:00 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 11:00:00 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 11:00:01 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 1349 ms
-2019-01-24 11:02:17 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
-INFO:Root WebApplicationContext: initialization started
-2019-01-24 11:02:17 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 11:02:17 CST 2019]; root of context hierarchy
-2019-01-24 11:02:17 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 11:02:17 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 11:02:18 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 11:02:19 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2076 ms
-2019-01-24 11:02:19 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 11:02:19 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 11:02:19 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 11:02:19 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 11:02:19 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 11:02:20 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 11:02:20 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 11:02:20 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 1430 ms
-2019-01-24 11:06:38 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:285) ]
-INFO:Root WebApplicationContext: initialization started
-2019-01-24 11:06:38 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing Root WebApplicationContext: startup date [Thu Jan 24 11:06:38 CST 2019]; root of context hierarchy
-2019-01-24 11:06:38 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring.xml]
-2019-01-24 11:06:38 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [mybatis-spring.xml]
-2019-01-24 11:06:39 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 11:06:41 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.ContextLoader >> Method: org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325) ]
-INFO:Root WebApplicationContext: initialization completed in 2860 ms
-2019-01-24 11:06:41 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:479) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization started
-2019-01-24 11:06:41 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.context.support.XmlWebApplicationContext >> Method: org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:513) ]
-INFO:Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Thu Jan 24 11:06:41 CST 2019]; parent: Root WebApplicationContext
-2019-01-24 11:06:41 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.xml.XmlBeanDefinitionReader >> Method: org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:316) ]
-INFO:Loading XML bean definitions from class path resource [spring-mvc.xml]
-2019-01-24 11:06:41 上午 [Thread: localhost-startStop-1][ Class:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor >> Method: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:141) ]
-INFO:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-01-24 11:06:41 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController/findAdminByName],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.object.pojo.Admin com.object.controller.LoginController.findAdminByName(java.lang.String)
-2019-01-24 11:06:41 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
-INFO:Mapped "{[/LoginController],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.object.controller.LoginController.showLogin()
-2019-01-24 11:06:42 上午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
-INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 1263 ms
+2019-02-01 21:48:28 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping >> Method: org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:182) ]
+INFO:Mapped "{[/LoginController/findUserAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.object.pojo.Admin> com.object.controller.LoginController.findAdminAll()
+2019-02-01 21:48:29 下午 [Thread: localhost-startStop-1][ Class:org.springframework.web.servlet.DispatcherServlet >> Method: org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:498) ]
+INFO:FrameworkServlet 'springDispatcherServlet': initialization completed in 1479 ms
+2019-02-01 21:48:49 下午 [Thread: http-bio-8080-exec-3][ Class:com.alibaba.druid.pool.DruidDataSource >> Method: com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:715) ]
+INFO:{dataSource-1} inited
