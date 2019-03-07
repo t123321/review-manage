@@ -1,0 +1,84 @@
+<html>
+<body
+	style="word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;">
+<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<form class="" action="">
+		<input type="text" id="preMoney" placeholder="请输入税前工资 "  onkeyup="value=this.value.replace(/[^\d]/g,'')"/>
+		<input type="button" id="jisuan" value="计算"/>
+		<input type="text" id="result" placeholder="税后工资结果在这 "  readonly="readonly"/>
+		<input type="text" id="result2" placeholder="五险一金结果在这 "  readonly="readonly"/>
+		<input type="text" id="result3" placeholder="个人所得税结果在这 "  readonly="readonly"/>
+		<div id="showText" style="margin-left:230px;display:none;">
+			税后工资
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			五险一金
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			个人所得税
+		</div>
+	</form>
+</head>
+<script type="text/javascript">
+	$(function(){
+		
+		$("#result").hover(function(){$("#showText").css("display","block");},function(){$("#showText").css("display","none");})
+		
+		$("#jisuan").click(function(){
+			//五险一金
+			var resultMoney=$("#preMoney").val();
+			$("#result2").val(resultMoney*0.23-3);
+			
+			//个人所得税
+			resultMoney=$("#preMoney").val(); //税前工资
+			var salary=$("#result2").val(); //五险一金
+			var sui=resultMoney-salary-5000;//全月应纳税所得额
+			var zong=0; //个人所得税变量
+			if(resultMoney>5000){
+				if(sui>0){ //个人所得税可以为负数请去掉该判断
+					if(sui<=1500){
+						zong=sui*0.03-0;
+					}else if(sui<=4500){
+						zong=sui*0.1-105;
+					}else if(sui<=9000){
+						zong=sui*0.2-555;
+					}else if(sui<=35000){
+						zong=sui*0.25-1055;
+					}else if(sui<=55000){
+						zong=sui*0.3-2755;
+					}else if(sui<=80000){
+						zong=sui*0.35-5505;
+					}else if(sui>80000){
+						zong=sui*0.45-13505;
+					}
+					$("#result3").val(zong);
+				}
+			}else{
+				alert("没超过起征点不用交个人税！");
+				$("#result3").val(0);
+			}
+			
+			//所得工资
+			$("#result").val(resultMoney-zong-salary);//所得工资
+		});
+	});
+</script>
+</body>
+</html>
+
+<!-- 
+养老保险:8%		医疗保险:2%+3	         失业保险:1%		工伤保险:0%		生育保险：0%	  住房公积金：12%  	统计:23%+3;
+1、养老保险：目前养老保险缴费比例：单位21%(全部划入统筹基金)，个人8%（全部划入个人帐户）。
+
+2、医疗保险：医疗保险缴费比例：单位9%，个人2%+3元
+
+3、失业保险：失业保险缴费比例：单位2%，个人1%；
+
+4、工伤保险：单位每个月为缴纳0.5%；工伤保险根据单位被划分的行业范围来确定它的工伤费率，在0.5%~2%之间；
+
+5、生育保险：单位每个月为你缴纳1%；
+
+6、住房公积金：公积金缴费比例：根据企业的实际情况，选择住房公积金缴费比例。但原则上最高缴费额不得超过职工平均工资的10%。2010年下半年起，全市统一规定所有用人单位按工资的12%办理缴纳住房公积金。单位和个人都是工资的12%。
+ -->

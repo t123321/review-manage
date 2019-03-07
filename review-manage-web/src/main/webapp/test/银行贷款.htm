@@ -1,0 +1,47 @@
+<html>
+<body
+	style="word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;">
+<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<form class="" action="">
+		<input type="text" id="loansMoney" placeholder="请输入贷款金额 "/>
+		<input type="text" id="loansYear" placeholder="请输入贷款年限"/>
+		<input type="text" id="loansInterest" placeholder="请输入贷款利息"/>
+		<select id="loansRepayment">   
+	        <option value="1">等额本金</option>   
+	        <option value="2">等额本息</option>   
+     	</select> 
+		<br><input type="button" id="jisuan" value="计算"/><br>
+		<input type="text" id="grossInterest" placeholder="总利息在这 " readonly="readonly"/>
+		<input type="text" id="monthCapital" placeholder="每月还款的本金结果在这 " readonly="readonly"/>
+		<input type="text" id="interest" placeholder="利息结果在这 " readonly="readonly"/>
+	</form>
+</head>
+<script type="text/javascript">
+	$(function(){
+		var loansMoney=0;//贷款金额 
+		var loansYear=0;//贷款年限
+		var loansInterest=0;//贷款利息
+		$("#jisuan").click(function(){
+			loansMoney=$("#loansMoney").val();
+			loansYear=$("#loansYear").val();
+			loansInterest=$("#loansInterest").val()/100;
+			var repaymentPeriods=loansYear*12;//还款期数
+			var accumulateMoney=0;//累积已还本金
+			if($("#loansRepayment option:selected").val()==1){ //还款方式
+				$("#grossInterest").val(loansMoney*loansInterest*loansYear);
+				for(var i=0;i<repaymentPeriods;i++){
+					accumulateMoney+=loansMoney/repaymentPeriods+(loansMoney-accumulateMoney)*(loansInterest/12);
+					
+				}
+			}else{
+				$("#grossInterest").val(loansMoney*loansInterest*loansYear);
+				$("#monthCapital").val(loansMoney/(loansYear*12));
+				$("#interest").val($("#grossInterest").val()/(loansYear*12));
+			}
+		});
+	});
+</script>
+</body>
+</html>

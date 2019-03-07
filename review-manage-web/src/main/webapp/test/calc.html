@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calc</title>
+<script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+<script>
+	function calcTwentyFour(){
+		$("#loan").hide();
+		var result = new Array();
+		
+		for(var i=1;i<10;i++){
+			for(var m=0;m<4;m++){
+				for(var j=1;j<10;j++){
+					if(j==i){
+						continue;
+					}
+					for(var n=0;n<4;n++){
+						for(var k=1;k<10;k++){
+							if(k==i||k==j){
+								continue;
+							}
+							if(calc((calc(i,j,m)),k,n)==24){
+								var num = new Array();
+								num[0] = i;
+								num[1] = j;
+								num[2] = k;
+								for(var x = 0;x<num.length-1;x++){
+									for(var y = 0;y<num.length-1-x;y++){
+										if(num[y] > num[y+1]){
+											var tag = num[y+1];
+											num[y+1] = num[y];
+											num[y] = tag;
+										}
+									}
+								}
+								
+								var getNum = num[0]+","+num[1]+","+num[2];
+								
+								if(result.length==0){
+									result[0] = getNum;
+								}else{
+									var isFind = false;
+									for(var index=0;index<result.length;index++){
+										if(getNum==result[index]){
+											isFind=true;
+											break;
+										}
+									}
+									
+									if(!isFind){
+										result[result.length] = getNum;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		$("#calcTwentyFour").empty();
+		$("#calcTwentyFour").append("<h2>以下数字经过组合计算可以得到24：</h2>")
+		for(var i=0;i<result.length;i++){
+			$("#calcTwentyFour").append("&emsp;<span style='line-height:30px;'>"+result[i]+"</span>&emsp;");
+			if((i+1)%4==0){
+				$("#calcTwentyFour").append("<br/>")
+			}
+		}
+	}
+	
+	function calc(i,j,operation){
+		switch(operation){
+			case 0:
+				return i+j;
+			case 1:
+				return i-j;
+			case 2:
+				return i*j;
+			case 3:
+				return i/j;
+		}
+	}
+	
+	function calcPIT(){
+		$("#calcTwentyFour").empty();
+		$("#loan").hide();
+		var salay = prompt("请输入税前工资","");
+		if(salay!=null&&salay!=""){
+			if(!isNaN(salay)){
+				var calcNum = salay;
+				if(calcNum>21396){
+					calcNum=21396;
+				}
+				if(calcNum<4279){
+					calcNum=4279;
+				}
+				var calcNum1=salay;
+				if(calcNum1>21400){
+					calcNum1=21400;
+				}
+				if(calcNum1<2300){
+					calcNum1=2300;
+				}
+				var insurance = (calcNum * 0.105 + calcNum1 * 0.07).toFixed(2);
+				
+				var tax;
+				var calcNum2 = salay - insurance - 5000;
+				if(calcNum2 <= 0){
+					tax = 0;
+				}else if(calcNum2 < 3000){
+					tax = calcNum2 * 0.03;
+				}else if(calcNum2 < 12000){
+					tax = calcNum2 * 0.1 - 210;
+				}else if(calcNum2 < 25000){
+					tax = calcNum2 * 0.2 - 1410;
+				}else if(calcNum2 < 35000){
+					tax = calcNum2 * 0.25 - 2660;
+				}else if(calcNum2 < 55000){
+					tax = calcNum2 * 0.3 - 4410;
+				}else if(calcNum2 < 80000){
+					tax = calcNum2 * 0.35 - 7160;
+				}else{
+					tax = calcNum2 * 0.45 - 15160;
+				}
+				
+				alert("五险一金："+ insurance + "\n个人所得税：" + tax.toFixed(2) + "\n税后工资："+(salay-insurance-tax.toFixed(2)).toFixed(2));
+			}else{
+				alert("请输入数字！");
+			}	
+		}else{
+			alert("请输入工资！");
+		}
+	}
+	
+	function toCalcLoan(){
+		$("#calcTwentyFour").empty();
+		$("#loan").show();
+	}
+	
+	function calcLoan(){
+		if($("#money").val()!="" && $("#year").val()!="" && $("#interest").val()!=""){
+			var money = parseFloat($("#money").val()); 
+			var year = parseFloat($("#year").val()); 
+			var interest = parseFloat($("#interest").val()); 
+			var type = $("#type").val(); 
+			var totalInterest = 0;
+			var monthlyPayment = 0;
+			
+			if(type == "1"){
+				var month = prompt("请输入想计算应付本息的月份","");
+				if(month!=null&&month!=""){
+					if(!isNaN(month)&&month%1==0){
+						totalInterest = (year*12+1)*money*interest/2;
+						monthlyPayment = (money - money/year/12*(parseInt(month) - 1))*interest + money/year/12;
+						alert("等额本金方式还款，总利息为：" + totalInterest.toFixed(2) + "\n第" + month + "月应付的本息为：" + monthlyPayment.toFixed(2));
+					}else{
+						alert("请输入整数！");
+					}
+				}else{
+					alert("请输入月份！");
+				}
+			}else{
+				var tag = 1;
+				for(var i = 0;i<year*12;i++){
+					tag = (1+interest)*tag;
+				}
+				
+				monthlyPayment = (money*interest*tag)/(tag -1);
+				totalInterest = monthlyPayment * year * 12 - money;
+				alert("等额本息方式还款，总利息为：" + totalInterest.toFixed(2) + "\n每月应付的本息为：" + monthlyPayment.toFixed(2));
+			}
+		}else{
+			alert("请输入贷款信息！");
+		}
+		
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="个人所得税计算" onclick="calcPIT();"/>
+	<input type="button" value="银行贷款计算" onclick="toCalcLoan();"/>
+	<input type="button" value="算24" onclick="calcTwentyFour();"/>
+	<div id="calcTwentyFour"></div>
+	<div id="loan" style="display:none;">
+		<table>
+			<tr>
+				<td>贷款金额：</td>
+				<td><input id="money" type="text"/></td>
+			</tr>
+			<tr>
+				<td>贷款年限：</td>
+				<td><input id="year" type="text"/></td>
+			</tr>
+			<tr>
+				<td>贷款利息：</td>
+				<td><input id="interest" type="text"/></td>
+			</tr>
+			<tr>
+				<td>还款方式：</td>
+				<td>
+					<select id="type">
+						<option value="1">等额本金</option>
+						<option value="2">等额本息</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="button" value="确定" onclick="calcLoan()"/></td>
+			</tr>
+		</table>
+		
+	</div>
+</body>
+</html>
